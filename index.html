@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>映画クレジット風</title>
+    <style>
+        body {
+            font-family: "Hiragino Mincho ProN", "游明朝", "Yu Mincho", serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .credit-role {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        .credit-name {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .input-box {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 18px;
+            width: 200px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function redirectToLink(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // フォーム送信を防ぐ
+                var inputBox = document.querySelector(".input-box");
+                if (inputBox.value.trim().length > 0) {
+                    window.location.href = "https://onecast-creator.github.io/quiz/";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">OneCast</div>
+        <p class="credit-role">プロデューサー</p>
+        <p class="credit-name">遠藤 歩<br>吉田 健人</p>
+        
+        <p class="credit-role">エグゼクティブプロデューサー</p>
+        <p class="credit-name">佐藤 健太</p>
+        
+        <p class="credit-role">脚本</p>
+        <p class="credit-name">青山 未来</p>
+        
+        <p class="credit-role">撮影監督</p>
+        <p class="credit-name">内田 和也</p>
+        
+        <p class="credit-role">編集</p>
+        <p class="credit-name">藤井 美咲</p>
+        
+        <p class="credit-role">主演</p>
+        <p class="credit-name"><input type="text" class="input-box" onkeypress="redirectToLink(event)" placeholder="Your name" style="opacity: 0.5;"></p>
+        
+        <p class="credit-role">撮影協力</p>
+        <p class="credit-name">東京フィルムコミッション<br>京都ロケーションサービス</p>
+        
+        <p class="credit-role">特別協賛</p>
+        <p class="credit-name">OneCast Inc.</p>
+        
+        <p class="credit-role">制作プロダクション</p>
+        <p class="credit-name">OneCast Pictures</p>
+        
+        <p class="credit-role">配給</p>
+        <p class="credit-name">OneCast Entertainment</p>
+        
+        <p style="margin-top: 30px; font-size: 12px; opacity: 0.7;">©2025 OneCast All Rights Reserved.</p>
+    </div>
+</body>
+</html>
