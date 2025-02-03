@@ -3,88 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>映画クレジット風</title>
+    <title>2025 OneCast - クレジット</title>
     <style>
         body {
-            font-family: "Hiragino Mincho ProN", "游明朝", "Yu Mincho", serif;
-            background-color: black;
-            color: white;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
             text-align: center;
             padding: 20px;
         }
-        .container {
+        .credit {
+            text-align: left;
             max-width: 600px;
-            margin: 0 auto;
+            margin: auto;
         }
-        .title {
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 20px;
+        .input-container {
+            margin: 20px 0;
         }
-        .credit-role {
-            font-size: 14px;
-            opacity: 0.8;
+        input {
+            padding: 10px;
+            font-size: 16px;
         }
-        .credit-name {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        .input-box {
-            border: none;
-            background: transparent;
-            outline: none;
-            font-size: 18px;
-            width: 200px;
-            color: white;
-            text-align: center;
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
-    <script>
-        function redirectToLink(event) {
-            if (event.key === 'Enter') {
-                event.preventDefault(); // フォーム送信を防ぐ
-                var inputBox = document.querySelector(".input-box");
-                if (inputBox.value.trim().length > 0) {
-                    window.location.href = "https://onecast-creator.github.io/quiz/";
-                }
-            }
-        }
-    </script>
 </head>
 <body>
-    <div class="container">
-        <div class="title">OneCast</div>
-        <p class="credit-role">プロデューサー</p>
-        <p class="credit-name">遠藤 歩<br>吉田 健人</p>
-        
-        <p class="credit-role">エグゼクティブプロデューサー</p>
-        <p class="credit-name">佐藤 健太</p>
-        
-        <p class="credit-role">脚本</p>
-        <p class="credit-name">青山 未来</p>
-        
-        <p class="credit-role">撮影監督</p>
-        <p class="credit-name">内田 和也</p>
-        
-        <p class="credit-role">編集</p>
-        <p class="credit-name">藤井 美咲</p>
-        
-        <p class="credit-role">主演</p>
-        <p class="credit-name"><input type="text" class="input-box" onkeypress="redirectToLink(event)" placeholder="Your name" style="opacity: 0.5;"></p>
-        
-        <p class="credit-role">撮影協力</p>
-        <p class="credit-name">東京フィルムコミッション<br>京都ロケーションサービス</p>
-        
-        <p class="credit-role">特別協賛</p>
-        <p class="credit-name">OneCast Inc.</p>
-        
-        <p class="credit-role">制作プロダクション</p>
-        <p class="credit-name">OneCast Pictures</p>
-        
-        <p class="credit-role">配給</p>
-        <p class="credit-name">OneCast Entertainment</p>
-        
-        <p style="margin-top: 30px; font-size: 12px; opacity: 0.7;">©2025 OneCast All Rights Reserved.</p>
+
+    <h1>映画『2025 OneCast』クレジット</h1>
+
+    <div class="input-container">
+        <label for="shuen-input">主演:</label>
+        <input type="text" id="shuen-input" placeholder="主演の名前を入力">
+        <button id="next-button">決定</button>
     </div>
+
+    <div class="credit">
+        <p><strong>プロデューサー</strong><br>松本 遥香<br>田中 翔太</p>
+        <p><strong>エグゼクティブプロデューサー</strong><br>佐藤 健太</p>
+        <p><strong>脚本</strong><br>青山 未来</p>
+        <p><strong>撮影監督</strong><br>内田 和也</p>
+        <p><strong>編集</strong><br>藤井 美咲</p>
+        <p><strong>美術</strong><br>吉田 陽介</p>
+        <p><strong>衣装デザイン</strong><br>鈴木 由紀</p>
+        <p><strong>ヘアメイク</strong><br>高橋 さくら</p>
+        <p><strong>音楽</strong><br>中村 悠人</p>
+        <p><strong>音響デザイン</strong><br>大野 隆</p>
+        <p><strong>VFXスーパーバイザー</strong><br>井上 智也</p>
+        <p><strong>CGIディレクター</strong><br>森本 修平</p>
+        <p><strong>アクションコーディネーター</strong><br>山口 大樹</p>
+        <p><strong>キャスティング</strong><br>川島 奈々</p>
+        <p><strong>制作デスク</strong><br>岡本 拓也</p>
+        <p><strong>照明</strong><br>長谷川 亮</p>
+        <p><strong>録音</strong><br>近藤 哲也</p>
+        <p><strong>助監督</strong><br>西村 俊</p>
+        <p><strong>プロダクションマネージャー</strong><br>藤田 彩香</p>
+        <p><strong>スクリプトスーパーバイザー</strong><br>宮本 直子</p>
+        <p><strong>宣伝プロデューサー</strong><br>石田 美咲</p>
+        <p><strong>広報</strong><br>山崎 翔</p>
+        <p><strong>撮影アシスタント</strong><br>木村 直也<br>田辺 さとみ</p>
+        <p><strong>編集アシスタント</strong><br>加藤 洋平</p>
+        <p><strong>特殊メイク</strong><br>坂本 亮太</p>
+        <p><strong>衣装アシスタント</strong><br>村上 由美</p>
+        <p><strong>音楽アシスタント</strong><br>工藤 大翔</p>
+        <p><strong>VFXアーティスト</strong><br>橋本 悠</p>
+        <p><strong>グラフィックデザイン</strong><br>田村 奈央</p>
+        <p><strong>劇中美術</strong><br>清水 直樹</p>
+        <p><strong>制作アシスタント</strong><br>高木 佳奈<br>渡辺 亮</p>
+        <p><strong>ロケーションマネージャー</strong><br>森田 健一</p>
+        <p><strong>撮影協力</strong><br>東京フィルムコミッション<br>京都ロケーションサービス</p>
+        <p><strong>特別協賛</strong><br>OneCast Inc.</p>
+        <p><strong>制作プロダクション</strong><br>OneCast Pictures</p>
+        <p><strong>配給</strong><br>OneCast Entertainment</p>
+        <p>©2025 OneCast All Rights Reserved.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputField = document.getElementById("shuen-input");
+            const nextButton = document.getElementById("next-button");
+
+            // スマホ・タブレット判定
+            function isMobileDevice() {
+                return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            }
+
+            if (isMobileDevice()) {
+                inputField.addEventListener("change", function () {
+                    nextButton.click(); // 入力確定後にボタンを自動クリック
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>
